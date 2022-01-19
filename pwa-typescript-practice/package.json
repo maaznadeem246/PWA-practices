@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.14.11",
+    "workbox-cli": "^6.4.2",
+    "workbox-precaching": "^6.4.2",
+    "workbox-routing": "^6.4.2",
+    "workbox-strategies": "^6.4.2"
+  },
+  "name": "pwa-typescript-practice",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "esbuild-windows-64": "^0.14.11",
+    "http-server": "^14.1.0",
+    "workbox-core": "^6.4.2"
+  },
+  "scripts": {
+    "build": "esbuild --outfile=sw.js --bundle sw.ts && workbox injectManifest",
+    "serve": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
